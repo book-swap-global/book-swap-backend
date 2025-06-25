@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgresql_dev:
+    container_name: bookswap_dev_db
+    build:
+      context: ./
+      dockerfile: ./docker/postgresql/Dockerfile.dev
+    ports:
+      - "7777:5432"
+
